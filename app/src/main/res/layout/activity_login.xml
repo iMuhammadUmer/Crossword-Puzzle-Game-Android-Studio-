@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:background="#FFF">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_below="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="LOGIN"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+
+    <EditText
+        android:id="@+id/txtLoginUsername"
+        android:layout_width="300dp"
+
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_below="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/txtLoginPass"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+
+        android:ems="10"
+        android:hint="Password"
+        android:textSize="16dp"
+        android:layout_marginTop="25dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtLoginUsername"/>
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_below="@id/txtLoginPass"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Create Account"
+        android:textColor="#000"
+        android:textSize="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_below="@id/txtLoginPass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        app:cardBackgroundColor="#FF6A00"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="20dp"
+        app:cardElevation="10dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>
